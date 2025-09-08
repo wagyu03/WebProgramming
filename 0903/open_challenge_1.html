@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>나의 소개</title>
+</head>
+<body>  
+<style>
+hr {height: 5px; background-color: gray;}
+h3 {text-align: center;}
+body {background-color:aquamarine; margin-left : 40px; margin-right : 40px;}
+span {color:red; font-size : 20px;}
+</style>
+<script>
+    function show() { // <img>에 이미지 달기
+document.getElementById("fig").src = "crown.jpg";
+}
+function hide() { // <img>에 이미지 제거
+document.getElementById("fig").src= "";
+}
+</script>
+<h3 onmouseover="show()" onmouseout="hide()">조은규</h3>
+<hr>
+<div><img id="fig" src="" width="200px"></div>
+저는 경상남도 <span>진주</span>에서 태어나,<br> 
+초등학교 1학년때 부터 부산에 살기 시작 했습니다.<br>
+ 제 학교는 <span>경성대학교</span>를 다니고,<br>
+  전공은 <span>소프트웨어</span> 입니다 <div class=""></div>
+</body>
+</html>
