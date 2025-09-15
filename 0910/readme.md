@@ -19,7 +19,7 @@
       - <mark>details</mark>와 <mark>summary</mark> :상세정보와 그 모음집
 
     ### 인라인 태그
-     -<mark>mark</mark> :중요한 텍스트임을 표시
+     - <mark>mark</mark> :중요한 텍스트임을 표시
      <mark>time</mark> :텍스트의 내용이 시간임을 표시
      <mark>meter</mark> :주어진 범위나 %의 데이터 량 표시
      <mark>progress</mark> :작업의 진행 정도 표시
