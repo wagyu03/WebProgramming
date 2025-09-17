@@ -26,4 +26,9 @@
      - <mark>time</mark> :텍스트의 내용이 시간임을 표시
      - <mark>meter</mark> :주어진 범위나 %의 데이터 량 표시
      - <mark>progress</mark> :작업의 진행 정도 표시
+---
 
+## Cascading style sheet / CSS
+  - style 그룹을 따로 만들지 않고 인라인 테그에서 사용하는 방법
+  - p style = "color : blue"; "font-size=400px"
+  - style 과 인라인 테그중 우선 순위는 : 인라인 테그
