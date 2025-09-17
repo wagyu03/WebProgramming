@@ -9,8 +9,5 @@
 
 ##  폼 작성
   - <mark>form</mark>: 예시) form name="fo" method ="get"
-  <ul>
-    <li> action</li>
-    <li></li>
-  </ul>
+  - sction, text, button 등의 명령어가 있음 -> 책확인
 
