@@ -24,7 +24,8 @@
        details
          summary 서두 /summary
          내용들 기입
-      /details
+       /details
+    
   - <mark>fieldset</mark>과<mark>legend</mark> : 태두리와 태두리에 이름 기입
      ### fieldset, legend 사용예시
         fieldset
