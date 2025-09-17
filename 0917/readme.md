@@ -17,15 +17,21 @@
   -  색 지정의 값들은 16진수로 , 0~256 가지의 색갈이 표현 가능하다.
 ---
 ## 시맨틱 블록 태그와 인라인태그
-    ### 블록 태그
+     블록 태그
      - <mark>figure</mark> :본문에 삽입되는 사진,차트 등 그림으로표현
      - <mark>details</mark>와 <mark>summary</mark> :상세정보와 그 모음집
+     ### 사용예시
+       details
+         summary 서두 /summary
+         내용들 기입
+      /details
 
-    ### 인라인 태그
+    인라인 태그
      - <mark>mark</mark> :중요한 텍스트임을 표시
      - <mark>time</mark> :텍스트의 내용이 시간임을 표시
      - <mark>meter</mark> :주어진 범위나 %의 데이터 량 표시
      - <mark>progress</mark> :작업의 진행 정도 표시
+     
 ---
 
 ## Cascading style sheet / CSS (점진적 스타일 문서)
