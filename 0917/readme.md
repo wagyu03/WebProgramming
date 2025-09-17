@@ -25,13 +25,24 @@
           summary 서두 /summary
           내용들 기입
         /details
+
+
     
   - <mark>fieldset</mark>과<mark>legend</mark> : 태두리와 태두리에 이름 기입
      ### fieldset, legend 사용예시
         fieldset
           legend 테두리이름 /legend
         /fieldset
-    
+
+
+  - select + option , input + range, number, color등
+     ### select , input사용 예시
+        select name="선종류"
+          option value="1"
+          option value="2"
+        input type="range" datalist="옵션 추가용 아이디"
+        <datalist id= 옵션 추가용 아이디>
+        
   인라인 태그
   - <mark>mark</mark> :중요한 텍스트임을 표시
   - <mark>time</mark> :텍스트의 내용이 시간임을 표시
