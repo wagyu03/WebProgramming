@@ -40,8 +40,10 @@
         <select name="선종류">
           <option value="1">
           <option value="2">
+    
         <input type="range" datalist="옵션 추가용 아이디">
         <datalist id= 옵션 추가용 아이디>
+          <option value="50" label="50%">
         
   인라인 태그
   - <mark>mark</mark> :중요한 텍스트임을 표시
