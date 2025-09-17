@@ -17,9 +17,9 @@
   -  색 지정의 값들은 16진수로 , 0~256 가지의 색갈이 표현 가능하다.
 ---
 ## 시맨틱 블록 태그와 인라인태그
-     블록 태그
-     - <mark>figure</mark> :본문에 삽입되는 사진,차트 등 그림으로표현
-     - <mark>details</mark>와 <mark>summary</mark> :상세정보와 그 모음집
+  블록 태그
+  - <mark>figure</mark> :본문에 삽입되는 사진,차트 등 그림으로표현
+- <mark>details</mark>와 <mark>summary</mark> :상세정보와 그 모음집
      ### 사용예시
        details
          summary 서두 /summary
