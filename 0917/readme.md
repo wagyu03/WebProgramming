@@ -3,6 +3,5 @@
 ##  HTML과 HTML5
   - 기존 HTML은 표현하는데 한계가 있음
   - HTML5 의 시맨틱 태그로 구조화함
-  - 예시
-<img src = "시맨틱태그.png">
+<img src = "시맨틱태그.png" width="200px">
 
