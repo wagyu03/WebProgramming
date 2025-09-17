@@ -8,6 +8,5 @@
 ---
 
 ##  폼 작성
-  - <mark>form</mark>
-  - <form name="fo" method ="get"></form>
+  - <mark>form</mark>: 예시) form name="fo" method ="get"
 
