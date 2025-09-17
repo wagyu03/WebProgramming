@@ -7,5 +7,7 @@
 
 ---
 
-## 
+##  폼 작성
+  - <mark>form</mark>
+  - <form name="fo" method ="get"></form>
 
