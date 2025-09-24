@@ -5,5 +5,18 @@
   
   - p > em 을 통해 style 양식 상속 가능
 
-     ###
-     <body class="abc"> 지정후 , body.abc { color : blue }
+     ### CLASS 사용
+        <body class="abc"> 지정후 , body.abc { color : blue }
+    
+## 자주 쓸만한 Emmet
+  ### HTML
+     input
+     input:text
+
+  ### CSS
+     bg
+     bgc
+     
+       
+        
+        
