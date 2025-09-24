@@ -8,7 +8,7 @@
      ### CLASS 사용
         <body class="abc"> 지정후 , body.abc { color : blue }
     
-## 자주 쓸만한 Emmet
+## 자주 쓸만한 Emmet / 참고 사이트 : https://docs.emmet.io/cheat-sheet/
   ### HTML
      input
      input:text
