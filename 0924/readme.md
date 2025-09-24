@@ -20,6 +20,6 @@
      bdrs = border-radius 테두리 모서리
      m = margin 바깥여백 설정
      p = padding 안쪽 여백 설정
-       
+
         
         
