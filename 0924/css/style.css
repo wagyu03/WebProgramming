@@ -2,14 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
 body {
-    background-color: #f5f5f5;
+    background-color: #a7e0ff;
     color: #2f2f2f;
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 16px;
 }
 
 section {
-    background-color: white;
+    background-color: rgb(228, 246, 255);
     border-radius: 10px;
     padding: 40px;
     margin-bottom: 10px;
@@ -80,7 +80,7 @@ a {
 
 a:hover {
     text-decoration: underline;
-    color: gold;
+    color: rgb(123, 123, 255);
 }
 
 ul {
@@ -115,13 +115,29 @@ ul li:nth-child(3)::before {
     list-style: none;
     padding: 0;
 }
+/* 크롬, 엣지, 사파리 */
+meter::-webkit-meter-bar {
+  background: #eee; /* 전체 배경 */
+  border-radius: 10px;
+}
+
+meter::-webkit-meter-optimum-value {
+  background: #225dff; /* 게이지 채워지는 부분(초록) */
+}
+
+/* 파이어폭스 */
+meter::-moz-meter-bar {
+  background: #225dff; /* 게이지 채워지는 부분 */
+}
+
 
 #skill li {
     display: inline-block;
-    background-color: gold;
+    background-color: rgb(123, 123, 255);
     padding: 4px 10px;
     border-radius: 32px;
     margin: 0 8px 8px 0;
+    color : white;
 }
 
 #skill li::before {
@@ -147,7 +163,7 @@ ul li:nth-child(3)::before {
 }
 
 #project a {
-    color: gold;
+    color: rgb(123, 123, 255);
     display: inline-block;
     border-radius: 4px;
     padding: 2px 8px 2px 0;
