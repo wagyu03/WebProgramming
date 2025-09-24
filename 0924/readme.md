@@ -6,4 +6,4 @@
   - p > em 을 통해 style 양식 상속 가능
 
     ###
-    <body class="abc"> 지정후 , body.abc { color : blue }
+       <body class="abc"> 지정후 , body.abc { color : blue }
