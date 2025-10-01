@@ -15,4 +15,4 @@
 
 
 ## var, let
-  주로 let으로 선언하기 장려
+  주로 <mark>let</mark>으로 선언하기 장려
