@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>인사 HTML</title>
+</head>
+<body>
+    <h3>Java script 써보기</h3>
+    <hr>
+<script>
+    function over(obj){
+        obj.src = "profile.jpg";
+    }   
+    function out(obj){
+        obj.src = "crown.jpg";  
+
+
+    }
+    document.write("<h3>안녕하신가요?</h3>");
+    let name = prompt("이름을 알려줘요, 인사해 드려요","홍길동");
+    if(name == null){
+        document.write("<h1>이름 알려줘요.</h1>");
+    }
+    if(name == ""){
+        document.write("<h1>이름 알려줘요.</h1>");
+    } else {
+        document.write("<h1>" + name + "님 환영합니다.</h1>");
+    }
+    
+</script>
+    <br>
+    <img src="crown.jpg"  width="150px" onmouseover="over(this)" onmouseout="out(this)">
+</body>
+<a href="javascript:alert('오늘 축제 마지막 날이네요, 오늘 아티스트는 지지원, 창모, YB 입니다')" >저를 클릭 해보시죠</a>
+    
+</html>
