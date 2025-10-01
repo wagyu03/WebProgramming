@@ -1,9 +1,6 @@
 # 5주차 수업내용 (Java script)
 
- 
- 
-   (script) 괄호 안에 작성(script)
-   ### 사용예시
+   ### 그림에 마우스를 올릴때 사진변경 예시
       <script>
       function over(obj) {
        obj.src = "hello.png"    <<JS 마우스 기능
