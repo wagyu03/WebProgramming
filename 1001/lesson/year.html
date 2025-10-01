@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>윤년 계산기</title>
+    <script>
+        function year(num){
+            if ((num%4 == 0 && num%100 != 0) || num%400 == 0){
+                return true;
+            }
+            return false;
+        }
+        document.write(year(2013))
+        </script>
+</head>
+<body>
+</body>
+</html>

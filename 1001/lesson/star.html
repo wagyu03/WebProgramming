@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function star_1(n){
+            for(let i=1; i<=n; i++){
+                for(let j=1; j<=i; j++){
+                    document.write("*");
+                }
+                document.write("<br>");
+            }
+        }
+        function star_2(n){
+            for(let i=1; i<=n; i++){
+                for(let k=1; k<=n-i; k++){
+                    document.write("&nbsp&nbsp");
+                }
+                for(let j=1; j<=i; j++){
+                    
+                    document.write("*");
+                }
+                document.write("<br>");
+            }
+        }
+        function star_3(n){
+            for(let i=1; i<=n; i++){
+                for(let k=1; k<=n-i; k++){
+                    document.write("&nbsp&nbsp");
+                }
+                for(let j=1; j<=i; j++){
+                    
+                    document.write("*");
+                }
+                for(let l=1; l<i; l++){
+                    document.write("*");
+                }
+                document.write("<br>");
+            }
+        }
+        function star_3(n){
+            for(let i=1; i<=n; i++){
+                for(let k=1; k<=n-i; k++){
+                    document.write("&nbsp&nbsp");
+                }
+                for(let j=1; j<=i; j++){
+                    
+                    document.write("*");
+                }
+                for(let l=1; l<i; l++){
+                    document.write("*");
+                }
+                document.write("<br>");
+            }
+        }
+
+        function star_4(n){
+            for(let i=1; i<=n; i++){
+                for(let k=1; k<=n-i; k++){
+                    document.write("&nbsp&nbsp");
+                }
+                for(let j=1; j<=i; j++){
+                    
+                    document.write("*");
+                }
+                for(let l=1; l<i; l++){
+                    document.write("*");
+                }
+                document.write("<br>");
+            }
+            idx=(n*2)-3;
+            space=1;
+            
+            for(let i=0; i<n; i++){
+                document.write("&nbsp&nbsp".repeat(space));
+                document.write("*".repeat(idx));
+                document.write("<br>")
+                idx-=2;
+                space+=1;
+            }
+
+        }
+        
+        star_1(5);
+        star_2(5);
+        star_3(5);
+        star_4(5);
+        </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+    
