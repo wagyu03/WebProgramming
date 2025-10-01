@@ -6,7 +6,7 @@
    ### 사용예시
       <script>
       function over(obj) {
-      obj.src = "hello.png"
+       obj.src = "hello.png"
       }
       </script>
       <body>
