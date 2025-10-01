@@ -12,4 +12,7 @@
       <body>
       <img src="hello.png" onmouseover = "over(this)" onmouseout = "out(this)"    << img 테그를 JS기능 하겠다고 알려줌
       </body>
-        
+
+
+## var, let
+  주로 let으로 선언하기 장려
