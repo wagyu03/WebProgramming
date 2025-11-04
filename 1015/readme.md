@@ -1,170 +1,123 @@
-7장. 자바스크립트 코어 객체와 배열
-1. 객체 개념
-자바스크립트 객체
+# 📘 자바스크립트 7장 요약 — 코어 객체와 배열
 
-객체는 프로퍼티(속성) 와 메소드(함수) 로 구성된 데이터의 집합이다.
+## 🎯 학습 목표
+1. 객체의 기본 개념 이해  
+2. 자바스크립트 코어 객체 활용 (Date, String, Math, Array 등)  
+3. 배열 생성 및 활용법 이해  
+4. 사용자 정의 객체 및 프로토타입 개념 익히기
 
-현실 세계의 사물을 표현하거나, 데이터와 동작을 하나의 단위로 묶는 데 사용된다.
+---
 
-자바스크립트 객체의 유형
-구분	설명	예시
-내장 객체 (Core Object)	자바스크립트에서 기본적으로 제공하는 객체	Array, String, Date, Math 등
-브라우저 객체 (BOM)	브라우저 환경에서 제공되는 객체	window, navigator, screen 등
-문서 객체 (DOM)	HTML 문서를 객체로 표현	document
-사용자 정의 객체	프로그래머가 직접 생성	let obj = {} 등
-2. 코어 객체 다루기
-대표적인 코어 객체
+## 🧩 1. 객체의 기본 개념
+- 현실 세계의 사물을 표현 (사람, 자동차 등)
+- **객체 = 속성(Property) + 메소드(Method)**
+```js
+let account = {
+  owner: "황기태",
+  balance: 35000,
+  deposit: function() {...},
+  withdraw: function() {...}
+};
+```
 
-Object
+---
 
-Array
+## 🧱 2. 자바스크립트 객체의 종류
+| 구분 | 설명 |
+|------|------|
+| **코어 객체** | JS 기본 내장 객체 (Array, Date, String, Math 등) |
+| **DOM 객체** | HTML 태그를 객체화 (문서 구조 제어) |
+| **BOM 객체** | 브라우저 제어용 객체 (window, location 등) |
 
-Date
+---
 
-String
-
-Math
-
-new 키워드로 객체 생성
-let obj = new Object();
-let arr = new Array();
-let str = new String("Hello");
-let date = new Date();
-
-객체 접근
-
-점 표기법(dot notation): object.property
-
-대괄호 표기법(bracket notation): object["property"]
-
-let person = { name: "홍길동", age: 25 };
-console.log(person.name);       // 홍길동
-console.log(person["age"]);     // 25
-
-3. 배열과 Array
-배열 만드는 방법
-
-대괄호([]) 사용
-
-new Array() 사용
-
-let fruits = ["apple", "banana", "cherry"];
-
-배열 크기와 원소 추가
-let arr = [];
-arr[0] = "a";
-arr[1] = "b";
-arr.push("c"); // push 메소드로 추가
-
-Array로 배열 만들기
-let nums = new Array(1, 2, 3, 4);
-let emptySlots = new Array(5);  // 길이 5, 비어 있는 배열
-let empty = new Array();        // 빈 배열
-
-배열의 원소 개수 (length 프로퍼티)
-let arr = [10, 20, 30];
-console.log(arr.length); // 3
-
-배열의 특징
-
-배열은 Array 객체이다.
-
-배열의 인덱스는 문자열로 저장된다.
-
-length 프로퍼티로 길이를 관리한다.
-
-여러 타입의 데이터를 함께 저장할 수 있다.
-
-let mixed = [1, "hello", true, {a:1}, [1,2]];
-
-Array 객체의 주요 메소드
-
-push(), pop(), shift(), unshift()
-
-splice(), slice()
-
-indexOf(), forEach(), map(), filter(), reduce()
-
-4. Date
-날짜와 시간을 다루는 객체
+## 📅 3. Date 객체
+```js
 let now = new Date();
-console.log(now.toLocaleString());
+now.getFullYear();  // 연도
+now.getMonth() + 1; // 월
+now.getDate();      // 일
+```
+- 시간 계산 및 비교 가능
+- `getHours(), getMinutes(), getSeconds()` 등 제공
 
-5. String
-String 객체
+---
 
-문자열을 다루는 객체.
+## 🔤 4. String 객체
+- 문자열은 **수정 불가능 (immutable)**
+- 주요 메소드:
+  - `charAt()`, `concat()`, `indexOf()`, `slice()`, `substr()`, `replace()`, `trim()`, `split()`
+```js
+let str = "Boys and Girls";
+str.replace("and", "or"); // "Boys or Girls"
+```
 
-문자열은 immutable(불변) 이다 — 수정 시 새 문자열이 생성된다.
+---
 
-문자열 길이
-let str = "Hello";
-console.log(str.length); // 5
+## ➗ 5. Math 객체
+- 수학 계산용 내장 객체 (new 없이 사용)
+- 주요 메소드:
+  - `Math.sqrt(x)`, `Math.pow(x, y)`, `Math.random()`, `Math.floor()`
+```js
+Math.floor(Math.random() * 10); // 0~9 난수
+```
 
-문자 접근
-console.log(str[1]); // 'e'
+---
 
-주요 String 메소드
-메소드	설명
-charAt()	특정 인덱스의 문자 반환
-indexOf()	부분 문자열의 시작 위치 반환
-substring()	문자열의 일부분 반환
-toUpperCase() / toLowerCase()	대소문자 변환
-split()	구분자로 나눠 배열 반환
-trim()	앞뒤 공백 제거
-String 활용 예시
-"abc" === "abc"  // true
-"Hello" + " " + "World"; // 문자열 연결
+## 📚 6. 배열 (Array)
+- 여러 값을 하나로 묶는 자료구조
+- 생성 방법:
+```js
+let arr1 = [10, 20, 30];        // 리터럴
+let arr2 = new Array(10, 20, 30); // 생성자
+```
+- **length 프로퍼티**로 크기 확인 및 변경 가능  
+- 다양한 메소드: `concat()`, `join()`, `reverse()`, `slice()`, `sort()`, `toString()`
 
-let text = "JavaScript";
-console.log(text.indexOf("Script")); // 4
-console.log(text.substring(0, 4));   // Java
+---
 
-let msg = "Hi";
-msg = msg.replace("Hi", "Hello");    // "Hello"
+## 🧠 7. 사용자 정의 객체
+- **1️⃣ new Object() 방식**
+```js
+let acc = new Object();
+acc.owner = "황기태";
+acc.deposit = function(m) { this.balance += m; };
+```
 
-"hello".toUpperCase();               // "HELLO"
-"HELLO".toLowerCase();               // "hello"
-
-"apple,banana,cherry".split(",");    // ["apple","banana","cherry"]
-"   hello   ".trim();                // "hello"
-
-let s = "ABC";
-console.log(s.charAt(1));            // B
-
-6. Math
-난수 발생
-console.log(Math.random()); // 0 이상 1 미만 난수
-
-7. 사용자 객체 만들기
-new Object()로 객체 만들기
-let user = new Object();
-user.name = "홍길동";
-user.age = 25;
-console.log(user.name);
-
-메소드 추가
-user.sayHello = function() {
-  console.log("안녕하세요!");
+- **2️⃣ 리터럴 방식**
+```js
+let acc = {
+  owner: "황기태",
+  balance: 35000,
+  deposit(m) { this.balance += m; }
 };
-user.sayHello();
+```
 
-리터럴 표기법으로 객체 만들기
-let person = {
-  name: "이몽룡",
-  age: 20,
-  hello: function() {
-    console.log("안녕!");
-  }
-};
-
-프로토타입과 사용자 정의 객체
-프로토타입 함수 정의
-function Student(name, age) {
-  this.name = name;
-  this.age = age;
+- **3️⃣ 프로토타입(생성자 함수) 방식**
+```js
+function Account(owner, code, balance) {
+  this.owner = owner;
+  this.code = code;
+  this.balance = balance;
+  this.deposit = function(m) { this.balance += m; };
 }
+let myAcc = new Account("이재문", "222", 10000);
+```
 
-new로 객체 생성
-let s1 = new Student("홍길동", 21);
-console.log(s1.name); // 홍길동
+---
+
+## 🧩 핵심 요약
+| 항목 | 핵심 포인트 |
+|------|--------------|
+| 객체 | 속성과 메소드의 집합 |
+| 배열 | 자료형이 달라도 저장 가능 |
+| String | 불변(immutable) 객체 |
+| Date | 시간/날짜 관리용 객체 |
+| Math | 수학 계산용 유틸리티 |
+| 사용자 객체 | 직접 정의 가능 (Object, 리터럴, 프로토타입)|
+
+---
+
+> 📘 **결론:**  
+> 자바스크립트의 코어 객체들은 프로그램의 기본 구조를 이루는 핵심 요소로,  
+> 실제 개발 시 데이터 처리와 화면 제어에 모두 필수적으로 사용된다.
