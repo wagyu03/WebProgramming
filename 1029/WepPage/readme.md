@@ -1,2 +1,1 @@
-
-https://style-man-lab.lovable.app/?utm_source=lovable-editor
+https://modmen-lab.lovable.app/
